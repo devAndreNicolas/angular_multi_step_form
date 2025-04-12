@@ -1,0 +1,31 @@
+<div 
+  class="box has-background-white-ter p-6" 
+  style="max-width: 720px; margin: auto;"
+>
+  <!-- Barra de Progresso -->
+  <div class="progress-bar mb-5">
+    <progress 
+      class="progress is-info is-medium" 
+      [value]="getProgressWidth()" 
+      max="100">
+    </progress>
+    <p class="has-text-centered has-text-grey-dark mt-2 is-size-6">
+      Passo {{ formService.currentStep + 1 }} de {{ steps.length }}
+    </p>
+  </div>
+
+  <!-- Conteúdo Dinâmico -->
+  <div class="content mt-4">
+    <ng-container *ngIf="steps[formService.currentStep] as currentStep">
+      <!-- Passo de Formulário -->
+      <ng-container *ngIf="isFormStep(currentStep)">
+        <app-input-passo [fields]="currentStep.fields"></app-input-passo>
+      </ng-container>
+
+      <!-- Passo de Confirmação -->
+      <ng-container *ngIf="isConfirmStep(currentStep)">
+        <app-confirmacao-passo (done)="finish()"></app-confirmacao-passo>
+      </ng-container>
+    </ng-container>
+  </div>
+</div>

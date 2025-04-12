@@ -1,0 +1,20 @@
+<div class="box has-shadow p-5">
+  <h3 class="title is-4 has-text-info mb-4">🔍 Confirme seus dados:</h3>
+
+  <div class="notification is-light has-text-dark is-size-7 p-4 mb-4" style="white-space: pre-wrap; border-radius: 8px;">
+    {{ formService.formData | json }}
+  </div>
+
+  <div class="buttons is-centered">
+    <button 
+      class="button is-danger is-light is-rounded"
+      (click)="back()">
+      ← Voltar
+    </button>
+    <button 
+      class="button is-success is-rounded"
+      (click)="confirm()">
+      ✅ Confirmar
+    </button>
+  </div>
+</div>

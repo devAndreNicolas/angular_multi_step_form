@@ -1,0 +1,14 @@
+.custom-box {
+  border-radius: 1rem;
+  background: linear-gradient(145deg, #00d1b2, #209cee);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .custom-box {
+    padding: 2rem;
+  }
+}
