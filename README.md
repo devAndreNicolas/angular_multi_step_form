@@ -175,8 +175,6 @@ export const authGuard: CanActivateFn = (route, state) => {
    - Verificação email
    - Perfil
 
-## 💡 Debug
-
 ```typescript
 // Limpar dados
 window.auth.clearAllData();
