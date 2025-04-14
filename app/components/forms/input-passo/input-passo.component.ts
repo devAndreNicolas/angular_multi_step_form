@@ -1,8 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { FormService } from '../../services/form.service';
+import { FormService } from '../../../services/form.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { DynamicField } from '../../models/dynamic-field.module';
+import { DynamicField } from '../../../models/dynamic-field.module';
 
 @Component({
   selector: 'app-input-passo',

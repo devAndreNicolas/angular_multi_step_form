@@ -1,0 +1,19 @@
+/* Centraliza o formulário e ajusta o espaçamento */
+.section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.box {
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  margin-bottom: 1.5rem;
+}
+
+.input:focus {
+  border-color: #3273dc; /* Azul do Bulma */
+  box-shadow: 0 0 5px rgba(50, 115, 220, 0.5);
+}

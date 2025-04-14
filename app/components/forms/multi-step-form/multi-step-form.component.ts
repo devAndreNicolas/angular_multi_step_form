@@ -1,11 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { FormService } from '../../services/form.service';
+import { FormService } from '../../../services/form.service';
 import { ConfirmacaoPassoComponent } from "../confirmacao-passo/confirmacao-passo.component";
 import { InputPassoComponent } from "../input-passo/input-passo.component";
 import { CommonModule } from '@angular/common';
 import { trigger, style, animate, transition } from '@angular/animations';
 import { Router } from '@angular/router';
-import { DynamicField } from '../../models/dynamic-field.module';
+import { DynamicField } from '../../../models/dynamic-field.module';
 
 @Component({
   selector: 'app-multi-step-form',

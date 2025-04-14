@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-import { FormService } from '../../services/form.service';
+import { FormService } from '../../../services/form.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
