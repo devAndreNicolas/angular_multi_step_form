@@ -1,0 +1,91 @@
+/* Container principal */
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Box do formulário e da confirmação */
+.box {
+  border-radius: 1rem;
+  background: linear-gradient(145deg, #00d1b2, #209cee);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  padding: 2.5rem;
+}
+
+/* Texto branco para títulos na confirmação */
+.box.has-text-centered h2.title {
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+/* Parágrafos na confirmação */
+.box.has-text-centered p {
+  color: #e0e7ff;
+  font-size: 1.1rem;
+  margin: 0.6rem 0;
+}
+
+/* Botões na confirmação */
+.box.has-text-centered button {
+  border-radius: 0.75rem;
+  font-weight: 600;
+  min-width: 120px;
+  padding: 0.6rem 1.2rem;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Botão editar azul claro */
+button.is-link {
+  background-color: #209cee;
+  color: white;
+  box-shadow: 0 4px 15px rgba(32, 156, 238, 0.5);
+}
+
+button.is-link:hover,
+button.is-link:focus {
+  background-color: #0a7abf;
+  box-shadow: 0 6px 20px rgba(10, 122, 191, 0.7);
+}
+
+/* Botão confirmar verde */
+button.is-success {
+  background-color: #23d160;
+  color: white;
+  box-shadow: 0 4px 15px rgba(35, 209, 96, 0.5);
+  margin-left: 1rem;
+}
+
+button.is-success:hover,
+button.is-success:focus {
+  background-color: #1aa14a;
+  box-shadow: 0 6px 20px rgba(26, 161, 74, 0.7);
+}
+
+/* Botão enviar do formulário */
+button.button.is-primary {
+  width: 100%;
+  margin-top: 1.5rem;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 15px rgba(32, 156, 238, 0.5);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button.button.is-primary:hover:not(:disabled),
+button.button.is-primary:focus:not(:disabled) {
+  background-color: #0a7abf;
+  box-shadow: 0 6px 20px rgba(10, 122, 191, 0.7);
+}
+
+/* Botão desabilitado */
+button.button.is-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Responsividade: padding menor em telas pequenas */
+@media screen and (max-width: 768px) {
+  .box {
+    padding: 1.5rem 1.25rem;
+  }
+}

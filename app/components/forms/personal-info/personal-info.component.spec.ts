@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MultiStepFormComponent } from './multi-step-form.component';
+import { PersonalInfoComponent } from './personal-info.component';
 
-describe('MultiStepFormComponent', () => {
-  let component: MultiStepFormComponent;
-  let fixture: ComponentFixture<MultiStepFormComponent>;
+describe('PersonalInfoComponent', () => {
+  let component: PersonalInfoComponent;
+  let fixture: ComponentFixture<PersonalInfoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MultiStepFormComponent]
+      imports: [PersonalInfoComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MultiStepFormComponent);
+    fixture = TestBed.createComponent(PersonalInfoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

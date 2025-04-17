@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
-import { FormTesteComponent } from './components/forms/form-teste/form-teste.component';
 import { CadastroUnicoComponent } from './components/auth/cadastro-unico/cadastro-unico.component';
 import { LoginComponent } from './components/auth/login/login.component';
 import { RegistroComponent } from './components/auth/registro/registro.component';
 import { authGuard } from './guards/auth.guard';
+import { UserFormComponent } from './components/forms/user-form/user-form.component';
 
 export const routes: Routes = [
     {
@@ -19,7 +19,7 @@ export const routes: Routes = [
     },
     {
         path: "form",
-        component: FormTesteComponent,
+        component: UserFormComponent,
         canActivate: [authGuard]
     },
     {

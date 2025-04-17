@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable, BehaviorSubject, of, throwError } from 'rxjs';
 import { delay, tap } from 'rxjs/operators';
 import { Router } from '@angular/router';
-import { User, AuthResponse } from '../models/user.model';
+import { User, AuthResponse } from '../models/user.module';
 
 @Injectable({
   providedIn: 'root'
@@ -94,6 +94,7 @@ export class AuthService {
       email: userData.email,
       password: userData.password,
       name: userData.name || '',
+      address: userData.address || { street: '', city: '' },
       createdAt: new Date()
     };
 

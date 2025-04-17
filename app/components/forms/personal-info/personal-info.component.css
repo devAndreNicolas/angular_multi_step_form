@@ -1,0 +1,41 @@
+/* Container dos campos */
+.field {
+  margin-bottom: 1.75rem;
+}
+
+/* Labels com texto branco para contraste */
+label.label {
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+/* Inputs estilizados */
+input.input {
+  background-color: #ffffff;       /* fundo branco */
+  color: #222222;                  /* texto escuro */
+  border: 1px solid #ccc;          /* borda cinza clara */
+  border-radius: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Placeholder */
+input.input::placeholder {
+  color: #999999;
+  opacity: 1;
+}
+
+/* Foco */
+input.input:focus {
+  outline: none;
+  border-color: #209cee;
+  box-shadow: 0 0 6px #209cee;
+  background-color: #ffffff;
+  color: #222222;
+}

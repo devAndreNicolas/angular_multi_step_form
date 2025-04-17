@@ -1,8 +1,12 @@
 export interface User {
-  id: string;
-  email: string;
-  password: string; // Usado apenas para login/registro
   name: string;
+  email: string;
+  address: {
+    street: string;
+    city: string;
+  };
+  password: string;
+  id: string;
   createdAt: Date;
 }
 

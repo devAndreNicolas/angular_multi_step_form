@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { InputPassoComponent } from './input-passo.component';
+import { AddressComponent } from './address.component';
 
-describe('InputPassoComponent', () => {
-  let component: InputPassoComponent;
-  let fixture: ComponentFixture<InputPassoComponent>;
+describe('AddressComponent', () => {
+  let component: AddressComponent;
+  let fixture: ComponentFixture<AddressComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [InputPassoComponent]
+      imports: [AddressComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(InputPassoComponent);
+    fixture = TestBed.createComponent(AddressComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
